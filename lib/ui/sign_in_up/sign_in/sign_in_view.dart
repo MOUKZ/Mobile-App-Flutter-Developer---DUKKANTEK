@@ -62,6 +62,7 @@ class SignInView extends StatelessWidget {
                           CustomInputWidget(
                             validator: model.passwordValidator,
                             onSaved: model.passwordOnSave,
+                            isPassword: true,
                             icon: Icons.password,
                             hintText: "Password",
                           ),

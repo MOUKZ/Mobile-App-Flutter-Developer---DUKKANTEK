@@ -7,7 +7,7 @@ import '../../core/data/repository/shared_prefrence_repository.dart';
 
 class SplashViewModel extends BaseViewModel {
   void checkLogin() async {
-    await Future.delayed(const Duration(seconds: 1));
+    await Future.delayed(const Duration(seconds: 3));
     final login = locator<SharedPreferencesRepository>().getLoggedIn();
     if (login) {
       locator<NavigationService>().replaceWith(Routes.homeView);

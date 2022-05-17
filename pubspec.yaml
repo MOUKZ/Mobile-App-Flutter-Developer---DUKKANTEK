@@ -74,21 +74,10 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-  - assets/images/appBar/
   - assets/images/
 
   #social
   - assets/images/social/
-  #home_screen
-  - assets/images/home_screen/
-  
-  #floating_action_button
-  - assets/images/floating_action_button/
-  
-  #   - images/a_dot_ham.jpeg
-  #lottie
-  - assets/lottie/
-  - assets/translations/
 
   #   - images/a_dot_ham.jpeg
 

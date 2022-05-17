@@ -5,12 +5,14 @@ class CustomInputWidget extends StatelessWidget {
   final void Function(String?) onSaved;
   final String? hintText;
   final IconData icon;
+  final bool? isPassword;
   const CustomInputWidget({
     Key? key,
     required this.validator,
     required this.onSaved,
     this.hintText,
     required this.icon,
+    this.isPassword,
   }) : super(key: key);
 
   @override
@@ -29,6 +31,7 @@ class CustomInputWidget extends StatelessWidget {
             ]),
         child: TextFormField(
           validator: validator,
+          obscureText: isPassword ?? false,
           onSaved: onSaved,
           keyboardType: TextInputType.name,
           style: const TextStyle(color: Colors.black),

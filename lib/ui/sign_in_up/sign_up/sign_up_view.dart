@@ -65,12 +65,14 @@ class SignUpView extends StatelessWidget {
                           onSaved: model.passwordOnSave,
                           icon: Icons.password,
                           hintText: "Password",
+                          isPassword: true,
                         ),
                         const SizedBox(height: 12),
                         CustomInputWidget(
                           validator: model.veryfiyPassworValidator,
                           onSaved: model.veryfiyPassworOnSave,
                           icon: Icons.password,
+                          isPassword: true,
                           hintText: "Verify Password",
                         ),
                         const SizedBox(
